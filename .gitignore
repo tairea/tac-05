@@ -57,3 +57,14 @@ claude-max-output.jsonl
 storage.json
 
 deep_specs/
+# User home directory files (adw-user home is /opt/adw)
+.cache/
+.local/
+.config/
+.bashrc
+.bash_history
+.bash_logout
+.profile
+.git-credentials
+.nvm/
+.npm/
