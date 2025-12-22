@@ -115,3 +115,20 @@
 2025-12-22T16:37:36.803Z [DEBUG] Stream started - received first chunk
 2025-12-22T16:37:37.078Z [DEBUG] Stream started - received first chunk
 2025-12-22T16:37:37.325Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:37:38.082Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-22T16:37:38.082Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:37:38.082Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:37:38.084Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:37:38.087Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:37:38.087Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:37:38.087Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:37:38.087Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:37:38.479Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:37:41.532Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:37:42.811Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-12-22T16:37:42.811Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:37:42.811Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-22T16:37:42.813Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:37:42.814Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2025-12-22T16:37:42.814Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:37:42.814Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)
