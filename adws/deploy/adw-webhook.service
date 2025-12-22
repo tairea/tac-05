@@ -5,12 +5,12 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=root
-WorkingDirectory=/opt/adw/adws
+User=adw-user
+WorkingDirectory=/opt/adw
 EnvironmentFile=/opt/adw/.env
 
 # Use uv to run the webhook server
-ExecStart=/root/.cargo/bin/uv run adw_triggers/trigger_webhook.py
+ExecStart=/opt/adw/.local/bin/uv run /opt/adw/adws/adw_triggers/trigger_webhook.py
 
 # Restart policy
 Restart=always

@@ -1,0 +1,183 @@
+2025-12-21T21:43:07.080Z [DEBUG] Watching for changes in setting files /opt/adw/.claude...
+2025-12-21T21:43:07.082Z [ERROR] Failed to save config with lock: Error: ENOENT: no such file or directory, lstat '/opt/adw/.claude.json'
+2025-12-21T21:43:07.082Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387082
+2025-12-21T21:43:07.082Z [DEBUG] Setting permissions for new file: 600
+2025-12-21T21:43:07.084Z [DEBUG] Temp file written successfully, size: 82 bytes
+2025-12-21T21:43:07.084Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387082 to /opt/adw/.claude.json
+2025-12-21T21:43:07.084Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.095Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387095
+2025-12-21T21:43:07.095Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.096Z [DEBUG] Temp file written successfully, size: 130 bytes
+2025-12-21T21:43:07.096Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.096Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387095 to /opt/adw/.claude.json
+2025-12-21T21:43:07.096Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.107Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387107
+2025-12-21T21:43:07.107Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.109Z [DEBUG] Temp file written successfully, size: 167 bytes
+2025-12-21T21:43:07.109Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.109Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387107 to /opt/adw/.claude.json
+2025-12-21T21:43:07.109Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.110Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387110
+2025-12-21T21:43:07.110Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.110Z [DEBUG] Temp file written successfully, size: 202 bytes
+2025-12-21T21:43:07.111Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.111Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387110 to /opt/adw/.claude.json
+2025-12-21T21:43:07.111Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.112Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387112
+2025-12-21T21:43:07.112Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.115Z [DEBUG] Temp file written successfully, size: 239 bytes
+2025-12-21T21:43:07.115Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.115Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387112 to /opt/adw/.claude.json
+2025-12-21T21:43:07.115Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.127Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-21T21:43:07.127Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-21T21:43:07.127Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-21T21:43:07.128Z [DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'userSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Bash(./scripts/copy_dot_env.sh:*)","Bash(chmod:*)","Bash(touch:*)"]
+2025-12-21T21:43:07.129Z [DEBUG] Applying permission update: Adding 3 deny rule(s) to destination 'userSettings': ["Bash(git push --force:*)","Bash(git push -f:*)","Bash(rm -rf:*)"]
+2025-12-21T21:43:07.132Z [DEBUG] LSP server manager initialized successfully
+2025-12-21T21:43:07.132Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-21T21:43:07.132Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-21T21:43:07.148Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (8.9ms): ldd /bin/ls 2>/dev/null
+2025-12-21T21:43:07.153Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/opt/adw/.claude/skills, project=[]
+2025-12-21T21:43:07.174Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (16.0ms): ps aux | grep -E "code|cursor|windsurf|idea|pycharm|webstorm|phpstorm|rubymine|clion|goland|rider|da
+2025-12-21T21:43:07.174Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2025-12-21T21:43:07.182Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-12-21T21:43:07.182Z [DEBUG] Looking for shell config file: /opt/adw/.bashrc
+2025-12-21T21:43:07.182Z [DEBUG] Shell config file not found: /opt/adw/.bashrc, creating snapshot with Claude Code defaults only
+2025-12-21T21:43:07.182Z [DEBUG] Snapshots directory: /opt/adw/.claude/shell-snapshots
+2025-12-21T21:43:07.183Z [DEBUG] Creating snapshot at: /opt/adw/.claude/shell-snapshots/snapshot-bash-1766353387182-gp0g67.sh
+2025-12-21T21:43:07.183Z [DEBUG] Shell binary exists: true
+2025-12-21T21:43:07.183Z [DEBUG] Execution timeout: 10000ms
+2025-12-21T21:43:07.185Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/6fca18cc-77bf-4dc4-940a-623974c1c013-agent-6fca18cc-77bf-4dc4-940a-623974c1c013.json.tmp.1256139.1766353387185
+2025-12-21T21:43:07.186Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-21T21:43:07.186Z [DEBUG] Renaming /opt/adw/.claude/todos/6fca18cc-77bf-4dc4-940a-623974c1c013-agent-6fca18cc-77bf-4dc4-940a-623974c1c013.json.tmp.1256139.1766353387185 to /opt/adw/.claude/todos/6fca18cc-77bf-4dc4-940a-623974c1c013-agent-6fca18cc-77bf-4dc4-940a-623974c1c013.json
+2025-12-21T21:43:07.186Z [DEBUG] File /opt/adw/.claude/todos/6fca18cc-77bf-4dc4-940a-623974c1c013-agent-6fca18cc-77bf-4dc4-940a-623974c1c013.json written atomically
+2025-12-21T21:43:07.193Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-21T21:43:07.193Z [DEBUG] Total plugin skills loaded: 0
+2025-12-21T21:43:07.193Z [DEBUG] Total plugin commands loaded: 0
+2025-12-21T21:43:07.193Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-21T21:43:07.202Z [DEBUG] Total plugin agents loaded: 0
+2025-12-21T21:43:07.292Z [DEBUG] Acquired mtime-based lock on running version: /opt/adw/.local/share/claude/versions/2.0.75
+2025-12-21T21:43:07.317Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387317
+2025-12-21T21:43:07.317Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.320Z [DEBUG] Temp file written successfully, size: 411 bytes
+2025-12-21T21:43:07.320Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.320Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387317 to /opt/adw/.claude.json
+2025-12-21T21:43:07.320Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.331Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387331
+2025-12-21T21:43:07.331Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.333Z [DEBUG] Temp file written successfully, size: 483 bytes
+2025-12-21T21:43:07.333Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.333Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387331 to /opt/adw/.claude.json
+2025-12-21T21:43:07.333Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.334Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387334
+2025-12-21T21:43:07.334Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.337Z [DEBUG] Temp file written successfully, size: 535 bytes
+2025-12-21T21:43:07.337Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.337Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387334 to /opt/adw/.claude.json
+2025-12-21T21:43:07.337Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.337Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387337
+2025-12-21T21:43:07.337Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.342Z [DEBUG] Temp file written successfully, size: 573 bytes
+2025-12-21T21:43:07.342Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.342Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387337 to /opt/adw/.claude.json
+2025-12-21T21:43:07.342Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.342Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387342
+2025-12-21T21:43:07.342Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.345Z [DEBUG] Temp file written successfully, size: 609 bytes
+2025-12-21T21:43:07.345Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.345Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387342 to /opt/adw/.claude.json
+2025-12-21T21:43:07.345Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.345Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387345
+2025-12-21T21:43:07.345Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.349Z [DEBUG] Temp file written successfully, size: 655 bytes
+2025-12-21T21:43:07.349Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.349Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387345 to /opt/adw/.claude.json
+2025-12-21T21:43:07.349Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.350Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387350
+2025-12-21T21:43:07.350Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.354Z [DEBUG] Temp file written successfully, size: 685 bytes
+2025-12-21T21:43:07.354Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.354Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387350 to /opt/adw/.claude.json
+2025-12-21T21:43:07.354Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.384Z [DEBUG] Git remote URL: https://github.com/tairea/tac-05
+2025-12-21T21:43:07.384Z [DEBUG] Parsed repository: tairea/tac-05 from https://github.com/tairea/tac-05
+2025-12-21T21:43:07.384Z [DEBUG] Parsed repository: tairea/tac-05 from URL: https://github.com/tairea/tac-05
+2025-12-21T21:43:07.385Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387385
+2025-12-21T21:43:07.385Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.386Z [DEBUG] Temp file written successfully, size: 764 bytes
+2025-12-21T21:43:07.386Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.386Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387385 to /opt/adw/.claude.json
+2025-12-21T21:43:07.386Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.386Z [DEBUG] Added /opt/adw/adws to tracked paths for repo tairea/tac-05
+2025-12-21T21:43:07.431Z [DEBUG] Shell snapshot created successfully (522 bytes)
+2025-12-21T21:43:07.446Z [DEBUG] Remote settings: No settings found (404)
+2025-12-21T21:43:07.447Z [DEBUG] Programmatic settings change notification for policySettings
+2025-12-21T21:43:07.447Z [DEBUG] Plugin hooks: reloading due to policySettings change
+2025-12-21T21:43:07.458Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-21T21:43:07.458Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-21T21:43:07.464Z [DEBUG] Loaded 21 unique skills (managed: 0, user: 0, project: 0, legacy commands: 21)
+2025-12-21T21:43:07.465Z [DEBUG] getSkills returning: 21 skill dir commands, 0 plugin skills
+2025-12-21T21:43:07.469Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387469
+2025-12-21T21:43:07.469Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.477Z [DEBUG] [SLOW OPERATION DETECTED] fs.writeFileSync (8.0ms)
+2025-12-21T21:43:07.477Z [DEBUG] Temp file written successfully, size: 794 bytes
+2025-12-21T21:43:07.477Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.477Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387469 to /opt/adw/.claude.json
+2025-12-21T21:43:07.477Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.502Z [DEBUG] MCP server "playwright": Starting connection with timeout of 30000ms
+2025-12-21T21:43:07.532Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387532
+2025-12-21T21:43:07.532Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.534Z [DEBUG] Temp file written successfully, size: 861 bytes
+2025-12-21T21:43:07.534Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.534Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387532 to /opt/adw/.claude.json
+2025-12-21T21:43:07.534Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.544Z [DEBUG] MCP server "playwright": Connection failed after 65ms: Executable not found in $PATH: "npx"
+2025-12-21T21:43:07.544Z [ERROR] MCP server "playwright" Connection failed: Executable not found in $PATH: "npx"
+2025-12-21T21:43:07.552Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2025-12-21T21:43:07.572Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387572
+2025-12-21T21:43:07.572Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.575Z [DEBUG] Temp file written successfully, size: 913 bytes
+2025-12-21T21:43:07.575Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.575Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387572 to /opt/adw/.claude.json
+2025-12-21T21:43:07.575Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:07.581Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-21T21:43:07.581Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:43:07.581Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-21T21:43:07.601Z [DEBUG] Total plugin output styles loaded: 0
+2025-12-21T21:43:07.666Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-21T21:43:07.666Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:43:07.666Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-21T21:43:07.678Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-21T21:43:07.678Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:43:07.678Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-21T21:43:07.699Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-21T21:43:07.699Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-21T21:43:07.699Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-21T21:43:07.699Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-21T21:43:07.706Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-12-21T21:43:07.706Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:43:07.706Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-21T21:43:07.732Z [DEBUG] Skills and commands included in Skill tool: find_plan_file, classify_issue, start, pull_request, install, test_e2e, test, feature, resolve_failed_test, resolve_failed_e2e_test, tools, prime, bug, implement, classify_adw, commit, generate_branch_name, chore, e2e:test_basic_query, e2e:test_complex_query, e2e:test_sql_injection
+2025-12-21T21:43:07.740Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256139.1766353387740
+2025-12-21T21:43:07.740Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:43:07.741Z [DEBUG] Temp file written successfully, size: 959 bytes
+2025-12-21T21:43:07.741Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:43:07.741Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256139.1766353387740 to /opt/adw/.claude.json
+2025-12-21T21:43:07.741Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:43:08.225Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:43:08.423Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:43:08.490Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/adw/.local/share/claude/versions/2.0.75)
+2025-12-21T21:43:09.740Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:43:10.371Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-21T21:43:10.371Z [DEBUG] Found 1 hook matchers in settings
+2025-12-21T21:43:10.371Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-21T21:43:10.387Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-21T21:43:11.177Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:43:11.352Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-12-21T21:43:11.352Z [DEBUG] Found 1 hook matchers in settings
+2025-12-21T21:43:11.352Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-21T21:43:11.354Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-21T21:43:11.355Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2025-12-21T21:43:11.355Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:43:11.355Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)
