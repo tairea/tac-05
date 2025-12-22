@@ -103,3 +103,32 @@
 2025-12-22T16:43:21.543Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
 2025-12-22T16:43:22.820Z [DEBUG] Stream started - received first chunk
 2025-12-22T16:43:24.203Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:43:26.416Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-22T16:43:26.416Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-22T16:43:26.416Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:43:26.416Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:43:26.418Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:43:26.822Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:43:26.845Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:43:26.855Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:43:26.917Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-22T16:43:26.917Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:43:26.917Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-22T16:43:26.923Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:43:27.356Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-22T16:43:27.356Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:43:27.356Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:43:27.360Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:43:27.371Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:43:27.371Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:43:27.371Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:43:27.371Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:43:27.804Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:43:29.851Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:43:30.968Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-12-22T16:43:30.968Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:43:30.968Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-22T16:43:30.970Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:43:30.971Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2025-12-22T16:43:30.971Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:43:30.971Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)
