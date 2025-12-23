@@ -1,0 +1,873 @@
+2025-12-22T16:38:32.819Z [DEBUG] [SLOW OPERATION DETECTED] fs.readSync (6.0ms)
+2025-12-22T16:38:32.854Z [DEBUG] Watching for changes in setting files /opt/adw/.claude, /opt/adw/.claude...
+2025-12-22T16:38:32.906Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-22T16:38:32.906Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-22T16:38:32.906Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-22T16:38:32.911Z [DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'userSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Bash(./scripts/copy_dot_env.sh:*)","Bash(chmod:*)","Bash(touch:*)"]
+2025-12-22T16:38:32.911Z [DEBUG] Applying permission update: Adding 3 deny rule(s) to destination 'userSettings': ["Bash(git push --force:*)","Bash(git push -f:*)","Bash(rm -rf:*)"]
+2025-12-22T16:38:32.911Z [DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'projectSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Bash(./scripts/copy_dot_env.sh:*)","Bash(chmod:*)","Bash(touch:*)"]
+2025-12-22T16:38:32.911Z [DEBUG] Applying permission update: Adding 3 deny rule(s) to destination 'projectSettings': ["Bash(git push --force:*)","Bash(git push -f:*)","Bash(rm -rf:*)"]
+2025-12-22T16:38:32.918Z [DEBUG] LSP server manager initialized successfully
+2025-12-22T16:38:32.918Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-22T16:38:32.918Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-22T16:38:32.958Z [DEBUG] Stats cache is up to date
+2025-12-22T16:38:32.981Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (22.7ms): ldd /bin/ls 2>/dev/null
+2025-12-22T16:38:32.997Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/opt/adw/.claude/skills, project=[]
+2025-12-22T16:38:33.037Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (28.6ms): ps aux | grep -E "code|cursor|windsurf|idea|pycharm|webstorm|phpstorm|rubymine|clion|goland|rider|da
+2025-12-22T16:38:33.040Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2025-12-22T16:38:33.050Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-12-22T16:38:33.050Z [DEBUG] Looking for shell config file: /opt/adw/.bashrc
+2025-12-22T16:38:33.050Z [DEBUG] Shell config file not found: /opt/adw/.bashrc, creating snapshot with Claude Code defaults only
+2025-12-22T16:38:33.050Z [DEBUG] Snapshots directory: /opt/adw/.claude/shell-snapshots
+2025-12-22T16:38:33.052Z [DEBUG] Creating snapshot at: /opt/adw/.claude/shell-snapshots/snapshot-bash-1766421513050-qnmf17.sh
+2025-12-22T16:38:33.052Z [DEBUG] Shell binary exists: true
+2025-12-22T16:38:33.052Z [DEBUG] Execution timeout: 10000ms
+2025-12-22T16:38:33.054Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421513054
+2025-12-22T16:38:33.055Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-22T16:38:33.055Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421513054 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:38:33.055Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:38:33.057Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-22T16:38:33.057Z [DEBUG] Total plugin skills loaded: 0
+2025-12-22T16:38:33.057Z [DEBUG] Total plugin commands loaded: 0
+2025-12-22T16:38:33.057Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-22T16:38:33.066Z [DEBUG] Total plugin agents loaded: 0
+2025-12-22T16:38:33.076Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1583263.1766421513075
+2025-12-22T16:38:33.076Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:38:33.077Z [DEBUG] Temp file written successfully, size: 977 bytes
+2025-12-22T16:38:33.077Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:38:33.077Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1583263.1766421513075 to /opt/adw/.claude.json
+2025-12-22T16:38:33.077Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-22T16:38:33.097Z [DEBUG] Remote settings: No settings found (404)
+2025-12-22T16:38:33.097Z [DEBUG] Programmatic settings change notification for policySettings
+2025-12-22T16:38:33.097Z [DEBUG] Plugin hooks: reloading due to policySettings change
+2025-12-22T16:38:33.102Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-22T16:38:33.102Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-22T16:38:33.104Z [DEBUG] Acquired mtime-based lock on running version: /opt/adw/.local/share/claude/versions/2.0.75
+2025-12-22T16:38:33.184Z [DEBUG] Loaded 21 unique skills (managed: 0, user: 0, project: 0, legacy commands: 21)
+2025-12-22T16:38:33.184Z [DEBUG] getSkills returning: 21 skill dir commands, 0 plugin skills
+2025-12-22T16:38:33.200Z [DEBUG] MCP server "playwright": Starting connection with timeout of 30000ms
+2025-12-22T16:38:33.221Z [DEBUG] MCP server "playwright": Connection failed after 29ms: Executable not found in $PATH: "npx"
+2025-12-22T16:38:33.221Z [ERROR] MCP server "playwright" Connection failed: Executable not found in $PATH: "npx"
+2025-12-22T16:38:33.226Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2025-12-22T16:38:33.247Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-22T16:38:33.247Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:38:33.247Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-22T16:38:33.263Z [DEBUG] Total plugin output styles loaded: 0
+2025-12-22T16:38:33.291Z [DEBUG] Git remote URL: https://github.com/tairea/tac-05
+2025-12-22T16:38:33.291Z [DEBUG] Parsed repository: tairea/tac-05 from https://github.com/tairea/tac-05
+2025-12-22T16:38:33.291Z [DEBUG] Parsed repository: tairea/tac-05 from URL: https://github.com/tairea/tac-05
+2025-12-22T16:38:33.291Z [DEBUG] Path /opt/adw already tracked for repo tairea/tac-05
+2025-12-22T16:38:33.324Z [DEBUG] Shell snapshot created successfully (596 bytes)
+2025-12-22T16:38:33.336Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-22T16:38:33.336Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:38:33.336Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-22T16:38:33.336Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-22T16:38:33.336Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:38:33.336Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-22T16:38:33.342Z [DEBUG] Skills and commands included in Skill tool: find_plan_file, classify_issue, start, pull_request, install, test_e2e, test, feature, resolve_failed_test, resolve_failed_e2e_test, tools, prime, bug, implement, classify_adw, commit, generate_branch_name, chore, e2e:test_basic_query, e2e:test_complex_query, e2e:test_sql_injection
+2025-12-22T16:38:33.355Z [DEBUG] Metadata string for implement:
+2025-12-22T16:38:33.355Z [DEBUG] "  <command-message>implement</command-message>\n<command-name>/implement</command-name>\n<command-args>specs/issue-7-adw-e211dda3-sdlc_planner-dark-mode-toggle.md</command-args>"
+2025-12-22T16:38:33.355Z [DEBUG] command-message tags in metadata: 1
+2025-12-22T16:38:33.362Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:38:33.362Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:38:33.362Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:38:33.362Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:38:33.366Z [DEBUG] processPromptSlashCommand creating 3 messages for implement
+2025-12-22T16:38:33.366Z [DEBUG] "  Message 1: <command-message>implement</command-message>\n<command-name>/implement</command-name>\n<command-args>specs/issue-7-adw-e211dda3-sdlc_planner-dark-mode-toggle.md</command-args>"
+2025-12-22T16:38:33.366Z [DEBUG] Message 2 [META]: [{"type":"text","text":"# Implement the following plan\nFollow the `Instructions` to implement the `Plan` then `Report` the completed work.\n\n## Instructions\n- Read the plan, think hard about the pl
+2025-12-22T16:38:33.366Z [DEBUG] Message 3: [ATTACHMENT]
+2025-12-22T16:38:33.367Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-12-22T16:38:33.367Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:38:33.367Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-22T16:38:33.904Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:38:35.250Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:38:35.300Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:38:35.872Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-22T16:38:35.872Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:35.872Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-22T16:38:35.880Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:37.358Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:38:38.704Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:38:38.705Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:38:38.705Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:38.705Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:38.709Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:38.716Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:38:38.716Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:38.716Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:38.724Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:38.729Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:38:38.729Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:38:38.729Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:38:38.729Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:38:40.333Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-22T16:38:40.333Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:40.333Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-22T16:38:40.345Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:42.242Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:38:46.029Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:38:46.029Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:38:46.029Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:46.029Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:38:46.038Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:46.040Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421526040
+2025-12-22T16:38:46.040Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:38:46.041Z [DEBUG] Temp file written successfully, size: 948 bytes
+2025-12-22T16:38:46.041Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:38:46.041Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421526040 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:38:46.041Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:38:46.042Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:38:46.042Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:46.042Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:38:46.045Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:46.055Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:38:46.055Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:38:46.055Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:38:46.055Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:38:48.140Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:38:50.036Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:38:50.036Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:38:50.036Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:38:50.036Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:38:50.036Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:50.036Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:50.037Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:38:50.037Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:50.037Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:50.037Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:38:50.037Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:50.037Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:50.042Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:50.047Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:38:50.047Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:50.047Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:50.049Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:50.053Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:38:50.053Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:50.053Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:50.054Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:50.057Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:38:50.057Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:50.057Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:38:50.064Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:50.069Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:50.070Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:50.076Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:38:50.076Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:38:50.076Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:38:50.076Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:38:52.460Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:38:57.082Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:38:57.083Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:38:57.083Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:57.083Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:38:57.087Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:57.088Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421537088
+2025-12-22T16:38:57.088Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:38:57.089Z [DEBUG] Temp file written successfully, size: 952 bytes
+2025-12-22T16:38:57.089Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:38:57.089Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421537088 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:38:57.089Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:38:57.091Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:38:57.091Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:38:57.091Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:38:57.093Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:38:57.098Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:38:57.098Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:38:57.098Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:38:57.098Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:38:59.356Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:09.381Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:09.381Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:09.381Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:09.382Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:09.387Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:09.392Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421549392
+2025-12-22T16:39:09.392Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:09.393Z [DEBUG] Temp file written successfully, size: 8867 bytes
+2025-12-22T16:39:09.394Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:09.394Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421549392 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:09.394Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:09.397Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:09.397Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:09.397Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:09.398Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:09.405Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:09.405Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:09.405Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:09.405Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:11.848Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:14.151Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:14.152Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:14.152Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:14.152Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:14.154Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:14.157Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421554157
+2025-12-22T16:39:14.158Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:14.159Z [DEBUG] Temp file written successfully, size: 8926 bytes
+2025-12-22T16:39:14.159Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:14.159Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421554157 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:14.159Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:14.163Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:14.163Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:14.163Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:14.171Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:14.177Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:14.177Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:14.177Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:14.177Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:16.859Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:19.085Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:19.085Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:19.085Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:19.085Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:19.090Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:19.095Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421559095
+2025-12-22T16:39:19.095Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:19.098Z [DEBUG] Temp file written successfully, size: 8968 bytes
+2025-12-22T16:39:19.098Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:19.098Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421559095 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:19.098Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:19.102Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:19.102Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:19.102Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:19.114Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:19.122Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:19.122Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:19.122Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:19.122Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:21.811Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:24.425Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:24.425Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:24.425Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:24.425Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:24.429Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:24.431Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421564431
+2025-12-22T16:39:24.431Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:24.433Z [DEBUG] Temp file written successfully, size: 9078 bytes
+2025-12-22T16:39:24.433Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:24.433Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421564431 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:24.433Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:24.435Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:24.435Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:24.436Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:24.443Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:24.449Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:24.449Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:24.449Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:24.449Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:27.088Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:28.586Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:28.586Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:28.586Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:28.587Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:28.592Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:28.595Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421568595
+2025-12-22T16:39:28.595Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:28.598Z [DEBUG] Temp file written successfully, size: 9128 bytes
+2025-12-22T16:39:28.598Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:28.598Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421568595 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:28.598Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:28.600Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:28.600Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:28.600Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:28.602Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:28.606Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:28.606Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:28.606Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:28.606Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:31.257Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:33.389Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:33.389Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:33.389Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:33.389Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:33.391Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:33.393Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421573393
+2025-12-22T16:39:33.393Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:33.395Z [DEBUG] Temp file written successfully, size: 9170 bytes
+2025-12-22T16:39:33.395Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:33.395Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421573393 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:33.395Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:33.397Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:33.397Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:33.397Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:33.402Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:33.406Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:33.406Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:33.406Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:33.406Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:35.916Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:38.313Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:38.313Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:38.313Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:38.313Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:38.323Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:38.326Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421578326
+2025-12-22T16:39:38.326Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:38.329Z [DEBUG] Temp file written successfully, size: 9251 bytes
+2025-12-22T16:39:38.329Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:38.329Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421578326 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:38.329Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:38.332Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:38.332Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:38.332Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:38.335Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:38.344Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:38.344Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:38.344Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:38.344Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:42.160Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:44.733Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:44.734Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:44.734Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:44.734Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:44.735Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:44.737Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421584737
+2025-12-22T16:39:44.737Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:44.738Z [DEBUG] Temp file written successfully, size: 9391 bytes
+2025-12-22T16:39:44.738Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:44.738Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421584737 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:44.738Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:44.740Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:44.740Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:44.740Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:44.746Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:44.749Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:44.749Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:44.749Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:44.749Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:47.442Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:49.490Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:49.490Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:49.490Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:49.490Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:49.492Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:49.493Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421589493
+2025-12-22T16:39:49.493Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:49.495Z [DEBUG] Temp file written successfully, size: 9433 bytes
+2025-12-22T16:39:49.495Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:49.495Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421589493 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:49.495Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:49.496Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:49.496Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:49.496Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:49.502Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:49.506Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:49.506Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:49.506Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:49.506Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:52.794Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:39:55.422Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:39:55.423Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:39:55.423Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:55.423Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:55.429Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:55.433Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421595433
+2025-12-22T16:39:55.433Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:39:55.435Z [DEBUG] Temp file written successfully, size: 9514 bytes
+2025-12-22T16:39:55.435Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:39:55.435Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421595433 to /opt/adw/app/client/src/style.css
+2025-12-22T16:39:55.435Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:39:55.438Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:39:55.438Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:39:55.439Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:39:55.447Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:39:55.455Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:39:55.455Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:39:55.455Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:39:55.455Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:39:58.561Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:01.178Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:01.178Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:01.178Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:01.178Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:01.181Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:01.184Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421601184
+2025-12-22T16:40:01.184Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:01.185Z [DEBUG] Temp file written successfully, size: 9589 bytes
+2025-12-22T16:40:01.185Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:01.185Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421601184 to /opt/adw/app/client/src/style.css
+2025-12-22T16:40:01.186Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:40:01.189Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:01.189Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:01.189Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:01.199Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:01.205Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:01.205Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:01.205Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:01.205Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:03.667Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:05.858Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:05.858Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:05.858Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:05.858Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:05.861Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:05.862Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421605862
+2025-12-22T16:40:05.862Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:05.865Z [DEBUG] Temp file written successfully, size: 9591 bytes
+2025-12-22T16:40:05.865Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:05.865Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421605862 to /opt/adw/app/client/src/style.css
+2025-12-22T16:40:05.865Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:40:05.866Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:05.866Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:05.866Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:05.869Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:05.880Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:05.880Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:05.880Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:05.880Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:08.342Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:10.644Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:10.644Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:10.644Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:10.644Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:10.646Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:10.648Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421610648
+2025-12-22T16:40:10.648Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:10.650Z [DEBUG] Temp file written successfully, size: 9633 bytes
+2025-12-22T16:40:10.650Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:10.650Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421610648 to /opt/adw/app/client/src/style.css
+2025-12-22T16:40:10.650Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:40:10.652Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:10.652Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:10.652Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:10.658Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:10.662Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:10.662Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:10.662Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:10.662Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:13.061Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:14.473Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:14.473Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:14.473Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:14.473Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:14.475Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:14.477Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421614477
+2025-12-22T16:40:14.477Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:14.478Z [DEBUG] Temp file written successfully, size: 9651 bytes
+2025-12-22T16:40:14.478Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:14.478Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421614477 to /opt/adw/app/client/src/style.css
+2025-12-22T16:40:14.478Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:40:14.480Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:14.480Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:14.480Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:14.481Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:14.485Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:14.485Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:14.485Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:14.485Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:17.424Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:20.095Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:20.095Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:20.095Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:20.095Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:20.098Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:20.101Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421620101
+2025-12-22T16:40:20.101Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:20.102Z [DEBUG] Temp file written successfully, size: 9671 bytes
+2025-12-22T16:40:20.102Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:20.102Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421620101 to /opt/adw/app/client/src/style.css
+2025-12-22T16:40:20.102Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:40:20.104Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:20.104Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:20.104Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:20.111Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:20.116Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:20.116Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:20.116Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:20.116Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:23.290Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:26.441Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:40:26.442Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:40:26.442Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:26.442Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:40:26.446Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:26.447Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421626447
+2025-12-22T16:40:26.447Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:40:26.449Z [DEBUG] Temp file written successfully, size: 954 bytes
+2025-12-22T16:40:26.449Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:26.449Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421626447 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:40:26.449Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:40:26.451Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:40:26.451Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:26.451Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:40:26.457Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:26.462Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:26.462Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:26.462Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:26.462Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:28.938Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:32.479Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:32.480Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:32.480Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:32.480Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:32.483Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:32.488Z [DEBUG] Writing to temp file: /opt/adw/app/client/index.html.tmp.1583263.1766421632488
+2025-12-22T16:40:32.488Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:32.490Z [DEBUG] Temp file written successfully, size: 4196 bytes
+2025-12-22T16:40:32.490Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:32.490Z [DEBUG] Renaming /opt/adw/app/client/index.html.tmp.1583263.1766421632488 to /opt/adw/app/client/index.html
+2025-12-22T16:40:32.490Z [DEBUG] File /opt/adw/app/client/index.html written atomically
+2025-12-22T16:40:32.493Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:32.493Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:32.493Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:32.502Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:32.507Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:32.507Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:32.507Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:32.507Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:35.511Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:46.182Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:46.182Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:46.182Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:46.182Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:46.193Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:46.198Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/style.css.tmp.1583263.1766421646198
+2025-12-22T16:40:46.198Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:46.201Z [DEBUG] Temp file written successfully, size: 10760 bytes
+2025-12-22T16:40:46.201Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:46.201Z [DEBUG] Renaming /opt/adw/app/client/src/style.css.tmp.1583263.1766421646198 to /opt/adw/app/client/src/style.css
+2025-12-22T16:40:46.201Z [DEBUG] File /opt/adw/app/client/src/style.css written atomically
+2025-12-22T16:40:46.203Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:46.203Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:46.203Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:46.213Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:46.217Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:46.217Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:46.217Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:46.217Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:49.359Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:51.219Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:40:51.219Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:40:51.219Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:51.219Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:40:51.221Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:51.222Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421651222
+2025-12-22T16:40:51.222Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:40:51.224Z [DEBUG] Temp file written successfully, size: 958 bytes
+2025-12-22T16:40:51.224Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:51.224Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421651222 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:40:51.224Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:40:51.224Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:40:51.224Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:51.225Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:40:51.230Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:51.233Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:51.233Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:51.233Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:51.233Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:40:54.720Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:40:57.176Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:40:57.176Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:40:57.176Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:57.176Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:57.178Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:57.181Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/main.ts.tmp.1583263.1766421657181
+2025-12-22T16:40:57.181Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:40:57.183Z [DEBUG] Temp file written successfully, size: 12994 bytes
+2025-12-22T16:40:57.183Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:40:57.183Z [DEBUG] Renaming /opt/adw/app/client/src/main.ts.tmp.1583263.1766421657181 to /opt/adw/app/client/src/main.ts
+2025-12-22T16:40:57.183Z [DEBUG] File /opt/adw/app/client/src/main.ts written atomically
+2025-12-22T16:40:57.185Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:40:57.185Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:40:57.185Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:40:57.191Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:40:57.194Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:40:57.194Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:40:57.195Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:40:57.195Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:00.409Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:07.400Z [DEBUG] executePreToolHooks called for tool: Edit
+2025-12-22T16:41:07.400Z [DEBUG] Getting matching hook commands for PreToolUse with query: Edit
+2025-12-22T16:41:07.400Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:07.400Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:41:07.403Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:07.406Z [DEBUG] Writing to temp file: /opt/adw/app/client/src/main.ts.tmp.1583263.1766421667406
+2025-12-22T16:41:07.406Z [DEBUG] Preserving file permissions: 100664
+2025-12-22T16:41:07.408Z [DEBUG] Temp file written successfully, size: 14477 bytes
+2025-12-22T16:41:07.408Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:41:07.408Z [DEBUG] Renaming /opt/adw/app/client/src/main.ts.tmp.1583263.1766421667406 to /opt/adw/app/client/src/main.ts
+2025-12-22T16:41:07.408Z [DEBUG] File /opt/adw/app/client/src/main.ts written atomically
+2025-12-22T16:41:07.411Z [DEBUG] Getting matching hook commands for PostToolUse with query: Edit
+2025-12-22T16:41:07.411Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:07.411Z [DEBUG] Matched 1 unique hooks for query "Edit" (1 before deduplication)
+2025-12-22T16:41:07.418Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:07.424Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:07.424Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:07.424Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:07.424Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:10.322Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:12.281Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:41:12.282Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:41:12.282Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:12.282Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:41:12.286Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:12.288Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421672288
+2025-12-22T16:41:12.288Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:41:12.290Z [DEBUG] Temp file written successfully, size: 960 bytes
+2025-12-22T16:41:12.290Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:41:12.290Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421672288 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:41:12.290Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:41:12.293Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:41:12.293Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:12.293Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:41:12.299Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:12.302Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:12.302Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:12.302Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:12.302Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:15.203Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:17.358Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:41:17.358Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:41:17.358Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:41:17.358Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:17.358Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:41:17.358Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:41:17.358Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:17.358Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:41:17.361Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:17.364Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:41:17.364Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:17.364Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:41:17.365Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:17.367Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:41:17.367Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:17.367Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:41:17.368Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:17.374Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:17.379Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:17.379Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:17.379Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:17.379Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:20.058Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:30.899Z [DEBUG] executePreToolHooks called for tool: Write
+2025-12-22T16:41:30.899Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2025-12-22T16:41:30.899Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:30.899Z [DEBUG] Matched 1 unique hooks for query "Write" (1 before deduplication)
+2025-12-22T16:41:30.906Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:31.668Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/opt/adw/.local/share/claude/versions/2.0.75)
+2025-12-22T16:41:31.746Z [DEBUG] Writing to temp file: /opt/adw/.claude/commands/e2e/test_dark_mode_toggle.md.tmp.1583263.1766421691746
+2025-12-22T16:41:31.748Z [DEBUG] Temp file written successfully, size: 2334 bytes
+2025-12-22T16:41:31.748Z [DEBUG] Renaming /opt/adw/.claude/commands/e2e/test_dark_mode_toggle.md.tmp.1583263.1766421691746 to /opt/adw/.claude/commands/e2e/test_dark_mode_toggle.md
+2025-12-22T16:41:31.748Z [DEBUG] File /opt/adw/.claude/commands/e2e/test_dark_mode_toggle.md written atomically
+2025-12-22T16:41:31.750Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2025-12-22T16:41:31.750Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:31.750Z [DEBUG] Matched 1 unique hooks for query "Write" (1 before deduplication)
+2025-12-22T16:41:31.755Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:31.760Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:31.760Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:31.760Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:31.760Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:34.524Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:36.396Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:41:36.397Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:41:36.397Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:36.397Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:41:36.398Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:36.399Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421696399
+2025-12-22T16:41:36.399Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:41:36.401Z [DEBUG] Temp file written successfully, size: 962 bytes
+2025-12-22T16:41:36.401Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:41:36.401Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421696399 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:41:36.401Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:41:36.402Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:41:36.402Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:36.402Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:41:36.404Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:36.408Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:36.408Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:36.408Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:36.408Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:38.928Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:40.654Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:41:40.654Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:41:40.654Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:40.654Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:41:40.656Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:40.659Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:41:40.659Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:40.659Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:41:40.660Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:40.664Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:40.664Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:40.664Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:40.664Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:44.168Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:45.835Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-22T16:41:45.836Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-22T16:41:45.836Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:45.836Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:41:45.839Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:45.846Z [DEBUG] No session environment scripts found
+2025-12-22T16:41:45.856Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-22T16:41:45.856Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:45.856Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:41:45.861Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:45.873Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:45.873Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:45.873Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:45.873Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:46.340Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:48.741Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:50.085Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-22T16:41:50.085Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-22T16:41:50.085Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:50.085Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:41:50.088Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:50.133Z [DEBUG] tree-sitter: loaded from embedded
+2025-12-22T16:41:55.195Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-22T16:41:55.195Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:41:55.195Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:41:55.200Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:41:55.208Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:41:55.208Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:41:55.208Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:41:55.208Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:41:55.607Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:41:58.403Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:01.948Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:42:01.949Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:42:01.949Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:01.949Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:42:01.951Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:01.952Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421721952
+2025-12-22T16:42:01.952Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:42:01.953Z [DEBUG] Temp file written successfully, size: 964 bytes
+2025-12-22T16:42:01.953Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:42:01.953Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421721952 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:42:01.954Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:42:01.954Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:42:01.954Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:01.954Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:42:01.956Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:01.963Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:01.963Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:01.963Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:01.963Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:04.536Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:05.948Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-22T16:42:05.948Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-22T16:42:05.948Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:05.948Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:42:05.950Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:06.496Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:06.519Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:06.584Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:06.997Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2025-12-22T16:42:06.997Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:42:06.997Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-22T16:42:07.002Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:07.002Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:07.002Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:07.002Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:09.435Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:11.090Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-22T16:42:11.091Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-22T16:42:11.091Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:11.091Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:42:11.094Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:11.108Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2025-12-22T16:42:11.108Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:42:11.108Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-22T16:42:11.112Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:11.112Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:11.112Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:11.112Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:15.938Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:17.889Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-22T16:42:17.889Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-22T16:42:17.889Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:17.889Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:42:17.891Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:17.904Z [DEBUG] Getting matching hook commands for PostToolUseFailure with query: Bash
+2025-12-22T16:42:17.904Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:42:17.904Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2025-12-22T16:42:17.908Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:17.908Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:17.908Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:17.908Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:22.756Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:24.070Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:42:24.070Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:42:24.070Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:24.070Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:42:24.072Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:24.076Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:42:24.076Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:24.076Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:42:24.078Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:24.082Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:24.082Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:24.082Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:24.082Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:31.298Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:32.531Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:42:32.531Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:42:32.531Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:32.531Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:42:32.535Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:32.538Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:42:32.538Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:32.538Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:42:32.545Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:32.550Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:32.550Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:32.550Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:32.550Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:35.429Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:36.547Z [DEBUG] executePreToolHooks called for tool: Read
+2025-12-22T16:42:36.547Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2025-12-22T16:42:36.547Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:36.547Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:42:36.549Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:36.551Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2025-12-22T16:42:36.551Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:36.551Z [DEBUG] Matched 1 unique hooks for query "Read" (1 before deduplication)
+2025-12-22T16:42:36.552Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:36.555Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:36.555Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:36.555Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:36.555Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:40.831Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:42.934Z [DEBUG] executePreToolHooks called for tool: Bash
+2025-12-22T16:42:42.934Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2025-12-22T16:42:42.934Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:42.934Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:42:42.938Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:42.963Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2025-12-22T16:42:42.963Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:42.963Z [DEBUG] Matched 1 unique hooks for query "Bash" (1 before deduplication)
+2025-12-22T16:42:42.969Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:42.973Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:42.973Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:42.973Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:42.973Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:43.381Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:46.142Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:42:48.934Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2025-12-22T16:42:48.935Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2025-12-22T16:42:48.935Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:48.935Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:42:48.938Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:48.939Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421768939
+2025-12-22T16:42:48.939Z [DEBUG] Preserving file permissions: 100600
+2025-12-22T16:42:48.941Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-22T16:42:48.941Z [DEBUG] Applied original permissions to temp file
+2025-12-22T16:42:48.941Z [DEBUG] Renaming /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json.tmp.1583263.1766421768939 to /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json
+2025-12-22T16:42:48.941Z [DEBUG] File /opt/adw/.claude/todos/c47a603e-afa2-4540-9d26-56e04cd3e7db-agent-c47a603e-afa2-4540-9d26-56e04cd3e7db.json written atomically
+2025-12-22T16:42:48.942Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2025-12-22T16:42:48.942Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:42:48.942Z [DEBUG] Matched 1 unique hooks for query "TodoWrite" (1 before deduplication)
+2025-12-22T16:42:48.948Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:42:48.953Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-22T16:42:48.953Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-22T16:42:48.953Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-22T16:42:48.953Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-22T16:42:51.597Z [DEBUG] Stream started - received first chunk
+2025-12-22T16:43:08.651Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-12-22T16:43:08.651Z [DEBUG] Found 1 hook matchers in settings
+2025-12-22T16:43:08.651Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-22T16:43:08.654Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-22T16:43:08.656Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2025-12-22T16:43:08.656Z [DEBUG] Found 0 hook matchers in settings
+2025-12-22T16:43:08.656Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)

@@ -1,0 +1,34 @@
+{
+  "cachedStatsigGates": {
+    "tengu_prompt_suggestion": true,
+    "tengu_disable_bypass_permissions_mode": false
+  },
+  "cachedDynamicConfigs": {
+    "tengu_1p_event_batch_config": {
+      "scheduledDelayMillis": 5000,
+      "maxExportBatchSize": 200,
+      "maxQueueSize": 8192
+    }
+  },
+  "cachedGrowthBookFeatures": {
+    "tengu_mcp_tool_search": false,
+    "tengu_disable_bypass_permissions_mode": false,
+    "strawberry_granite_flag": "OFF",
+    "persimmon_marble_flag": "OFF",
+    "tengu_pid_based_version_locking": false,
+    "tengu_tool_pear": false,
+    "tengu_thinkback": false,
+    "tengu_ant_attribution_header_new": true
+  },
+  "userID": "d5446b97b28351da405df8f09bf88da8f94d8905eba6df73ef0bdde2737e1c9a",
+  "firstStartTime": "2025-12-21T21:43:07.093Z",
+  "sonnet45MigrationComplete": true,
+  "opus45MigrationComplete": true,
+  "thinkingMigrationComplete": true,
+  "githubRepoPaths": {
+    "tairea/tac-05": [
+      "/opt/adw",
+      "/opt/adw/adws"
+    ]
+  }
+}

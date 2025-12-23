@@ -2,8 +2,8 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  
-  /* Color palette */
+
+  /* Color palette - Light theme (default) */
   --primary-color: #667eea;
   --secondary-color: #764ba2;
   --background: #f5f7fa;
@@ -13,11 +13,34 @@
   --border-color: #e0e0e0;
   --error-color: #dc3545;
   --success-color: #28a745;
-  
+  --code-background: #f8f9fa;
+  --table-hover: #f8f9fa;
+  --modal-overlay: rgba(0, 0, 0, 0.5);
+  --secondary-button-bg: #ffffff;
+  --close-button-hover: #f0f0f0;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --primary-color: #7c8ff5;
+  --secondary-color: #8f6bb8;
+  --background: #1a1a2e;
+  --surface: #16213e;
+  --text-primary: #e4e4e7;
+  --text-secondary: #a1a1aa;
+  --border-color: #27374d;
+  --error-color: #ef4444;
+  --success-color: #22c55e;
+  --code-background: #0f172a;
+  --table-hover: #1e293b;
+  --modal-overlay: rgba(0, 0, 0, 0.7);
+  --secondary-button-bg: #16213e;
+  --close-button-hover: #27374d;
 }
 
 * {
@@ -29,6 +52,61 @@ body {
   padding: 0;
   background: var(--background);
   color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header Section */
+.app-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.theme-toggle-button {
+  background: var(--code-background);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  color: var(--text-primary);
+}
+
+.theme-toggle-button:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.2);
+}
+
+.theme-toggle-button:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.theme-icon {
+  line-height: 1;
 }
 
 .container {
@@ -59,6 +137,7 @@ h2 {
   padding: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
 }
 
 #query-input {
@@ -69,7 +148,9 @@ h2 {
   border-radius: 8px;
   resize: vertical;
   font-family: inherit;
-  transition: border-color 0.3s;
+  background: var(--surface);
+  color: var(--text-primary);
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 #query-input:focus {
@@ -114,9 +195,10 @@ h2 {
 }
 
 .secondary-button {
-  background: white;
+  background: var(--secondary-button-bg);
   color: var(--primary-color);
   border: 2px solid var(--primary-color);
+  transition: all 0.3s ease;
 }
 
 .secondary-button:hover {
@@ -139,6 +221,7 @@ h2 {
   padding: 2rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
 }
 
 .results-header {
@@ -149,13 +232,14 @@ h2 {
 }
 
 .sql-display {
-  background: #f8f9fa;
+  background: var(--code-background);
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1rem;
   font-size: 0.875rem;
   margin-bottom: 1rem;
   text-align: left;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .query-display {
@@ -194,14 +278,17 @@ h2 {
 }
 
 .results-table th {
-  background: #f8f9fa;
+  background: var(--code-background);
   font-weight: 600;
   position: sticky;
   top: 0;
+  color: var(--text-primary);
+  transition: background-color 0.3s ease;
 }
 
 .results-table tr:hover {
-  background: #f8f9fa;
+  background: var(--table-hover);
+  transition: background-color 0.2s ease;
 }
 
 /* Tables Section */
@@ -211,6 +298,7 @@ h2 {
   padding: 1.5rem;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
 }
 
 .tables-section h3 {
@@ -249,10 +337,11 @@ h2 {
 
 .table-item {
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--code-background);
   border-radius: 8px;
   margin-bottom: 0.75rem;
   border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .table-header {
@@ -281,12 +370,13 @@ h2 {
 
 .column-tag {
   display: inline-block;
-  background: white;
+  background: var(--surface);
   padding: 0.25rem 0.5rem;
   border-radius: 4px;
   margin-right: 0.5rem;
   margin-top: 0.25rem;
   border: 1px solid var(--border-color);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .column-name {
@@ -352,7 +442,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--modal-overlay);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -367,6 +457,7 @@ h2 {
   max-height: 80vh;
   overflow-y: auto;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
 }
 
 .modal-header {
@@ -397,7 +488,7 @@ h2 {
 }
 
 .close-modal:hover {
-  background: #f0f0f0;
+  background: var(--close-button-hover);
 }
 
 .modal-body {
@@ -425,11 +516,11 @@ h2 {
   align-items: center;
   gap: 1rem;
   padding: 1rem;
-  background: #f8f9fa;
+  background: var(--code-background);
   border: 2px solid var(--border-color);
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   text-align: left;
 }
 

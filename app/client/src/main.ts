@@ -3,8 +3,59 @@ import { api } from './api/client'
 
 // Global state
 
+// Theme Management
+function initializeTheme() {
+  // Get saved theme from localStorage or detect system preference
+  const savedTheme = localStorage.getItem('theme');
+  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  // Determine which theme to use
+  const theme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+
+  // Apply the theme
+  applyTheme(theme);
+
+  // Set up toggle button
+  const toggleButton = document.getElementById('theme-toggle-button') as HTMLButtonElement;
+  if (toggleButton) {
+    toggleButton.addEventListener('click', toggleTheme);
+  }
+}
+
+function applyTheme(theme: string) {
+  // Validate theme
+  if (theme !== 'light' && theme !== 'dark') {
+    theme = 'light';
+  }
+
+  // Apply to document
+  document.documentElement.setAttribute('data-theme', theme);
+
+  // Save to localStorage
+  localStorage.setItem('theme', theme);
+
+  // Update button icon
+  updateThemeIcon(theme);
+}
+
+function toggleTheme() {
+  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+  const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+  applyTheme(newTheme);
+}
+
+function updateThemeIcon(theme: string) {
+  const themeIcon = document.querySelector('.theme-icon') as HTMLElement;
+  if (themeIcon) {
+    // Show moon when in light mode (to indicate switching to dark)
+    // Show sun when in dark mode (to indicate switching to light)
+    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+  }
+}
+
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
+  initializeTheme();
   initializeQueryInput();
   initializeFileUpload();
   initializeModal();

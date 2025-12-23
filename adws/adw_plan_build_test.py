@@ -41,9 +41,13 @@ def main():
     # Get the directory where this script is located
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
+    # Get full path to uv to avoid PATH issues
+    repo_root = os.path.dirname(script_dir)
+    uv_path = os.path.join(repo_root, ".local", "bin", "uv")
+
     # Run plan with the ADW ID
     plan_cmd = [
-        "uv",
+        uv_path,
         "run",
         os.path.join(script_dir, "adw_plan.py"),
         issue_number,
@@ -56,7 +60,7 @@ def main():
 
     # Run build with the ADW ID
     build_cmd = [
-        "uv",
+        uv_path,
         "run",
         os.path.join(script_dir, "adw_build.py"),
         issue_number,
@@ -69,7 +73,7 @@ def main():
 
     # Run test with the ADW ID
     test_cmd = [
-        "uv",
+        uv_path,
         "run",
         os.path.join(script_dir, "adw_test.py"),
         issue_number,

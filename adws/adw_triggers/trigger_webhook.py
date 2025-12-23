@@ -142,33 +142,56 @@ async def github_webhook(request: Request):
                     f"{ADW_BOT_IDENTIFIER} 🤖 ADW Webhook: Detected `{workflow}` workflow request\n\n"
                     f"Starting workflow with ID: `{adw_id}`\n"
                     f"Reason: {trigger_reason}\n\n"
-                    f"Logs will be available at: `agents/{adw_id}/{workflow}/`"
+                    f"Logs will be available at: `agents/{adw_id}/{workflow}/`\n"
+                    f"- stdout: `agents/{adw_id}/{workflow}/stdout.log`\n"
+                    f"- stderr: `agents/{adw_id}/{workflow}/stderr.log`"
                 )
             except Exception as e:
                 logger.warning(f"Failed to post issue comment: {e}")
             
-            # Build command to run the appropriate workflow  
+            # Build command to run the appropriate workflow
             script_dir = os.path.dirname(os.path.abspath(__file__))
             adws_dir = os.path.dirname(script_dir)
             repo_root = os.path.dirname(adws_dir)  # Go up to repository root
             trigger_script = os.path.join(adws_dir, f"{workflow}.py")
-            
-            cmd = ["uv", "run", trigger_script, str(issue_number), adw_id]
+
+            # Use full path to uv to avoid PATH issues
+            uv_path = os.path.join(repo_root, ".local", "bin", "uv")
+            cmd = [uv_path, "run", trigger_script, str(issue_number), adw_id]
             
             print(f"Launching {workflow} for issue #{issue_number}")
             print(f"Command: {' '.join(cmd)} (reason: {trigger_reason})")
             print(f"Working directory: {repo_root}")
             
-            # Launch in background using Popen
-            process = subprocess.Popen(
-                cmd,
-                cwd=repo_root,  # Run from repository root where .claude/commands/ is located
-                env=os.environ.copy()  # Pass all environment variables
-            )
+            # Create log directory for the workflow if it doesn't exist
+            workflow_log_dir = os.path.join(repo_root, "agents", adw_id, workflow)
+            os.makedirs(workflow_log_dir, exist_ok=True)
+
+            # Open log files for stdout and stderr
+            stdout_log = os.path.join(workflow_log_dir, "stdout.log")
+            stderr_log = os.path.join(workflow_log_dir, "stderr.log")
+
+            # Launch in background using Popen with output redirection
+            try:
+                with open(stdout_log, "w") as stdout_file, open(stderr_log, "w") as stderr_file:
+                    process = subprocess.Popen(
+                        cmd,
+                        cwd=repo_root,  # Run from repository root where .claude/commands/ is located
+                        env=os.environ.copy(),  # Pass all environment variables
+                        stdout=stdout_file,
+                        stderr=stderr_file
+                    )
+            except Exception as popen_error:
+                error_msg = f"Failed to launch workflow: {popen_error}"
+                logger.error(error_msg)
+                print(error_msg)
+                raise  # Re-raise to be caught by outer exception handler
             
             print(f"Background process started for issue #{issue_number} with ADW ID: {adw_id}")
-            print(f"Logs will be written to: agents/{adw_id}/{workflow}/execution.log")
-            
+            print(f"Logs will be written to: agents/{adw_id}/{workflow}/")
+            print(f"  - stdout: {stdout_log}")
+            print(f"  - stderr: {stderr_log}")
+
             # Return immediately
             return {
                 "status": "accepted",
@@ -177,7 +200,9 @@ async def github_webhook(request: Request):
                 "workflow": workflow,
                 "message": f"ADW {workflow} workflow triggered for issue #{issue_number}",
                 "reason": trigger_reason,
-                "logs": f"agents/{adw_id}/{workflow}/"
+                "logs": f"agents/{adw_id}/{workflow}/",
+                "stdout_log": stdout_log,
+                "stderr_log": stderr_log
             }
         else:
             print(f"Ignoring webhook: event={event_type}, action={action}, issue_number={issue_number}")
@@ -205,8 +230,10 @@ async def health():
         health_check_script = os.path.join(os.path.dirname(script_dir), "adw_tests", "health_check.py")
         
         # Run health check with timeout
+        # Use full path to uv
+        uv_path = "/opt/adw/.local/bin/uv"
         result = subprocess.run(
-            ["uv", "run", health_check_script],
+            [uv_path, "run", health_check_script],
             capture_output=True,
             text=True,
             timeout=30,

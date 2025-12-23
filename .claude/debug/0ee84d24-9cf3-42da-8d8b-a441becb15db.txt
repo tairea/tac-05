@@ -1,0 +1,102 @@
+2025-12-21T21:45:07.332Z [DEBUG] Watching for changes in setting files /opt/adw/.claude, /opt/adw/.claude...
+2025-12-21T21:45:07.357Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2025-12-21T21:45:07.357Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2025-12-21T21:45:07.357Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2025-12-21T21:45:07.359Z [DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'userSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Bash(./scripts/copy_dot_env.sh:*)","Bash(chmod:*)","Bash(touch:*)"]
+2025-12-21T21:45:07.359Z [DEBUG] Applying permission update: Adding 3 deny rule(s) to destination 'userSettings': ["Bash(git push --force:*)","Bash(git push -f:*)","Bash(rm -rf:*)"]
+2025-12-21T21:45:07.359Z [DEBUG] Applying permission update: Adding 12 allow rule(s) to destination 'projectSettings': ["Bash(mkdir:*)","Bash(uv:*)","Bash(find:*)","Bash(mv:*)","Bash(grep:*)","Bash(npm:*)","Bash(ls:*)","Bash(cp:*)","Write","Bash(./scripts/copy_dot_env.sh:*)","Bash(chmod:*)","Bash(touch:*)"]
+2025-12-21T21:45:07.359Z [DEBUG] Applying permission update: Adding 3 deny rule(s) to destination 'projectSettings': ["Bash(git push --force:*)","Bash(git push -f:*)","Bash(rm -rf:*)"]
+2025-12-21T21:45:07.361Z [DEBUG] LSP server manager initialized successfully
+2025-12-21T21:45:07.361Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2025-12-21T21:45:07.361Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-21T21:45:07.367Z [DEBUG] Stats cache does not exist, returning empty cache
+2025-12-21T21:45:07.369Z [DEBUG] Stats cache empty, processing all historical data in background
+2025-12-21T21:45:07.380Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (10.2ms): ldd /bin/ls 2>/dev/null
+2025-12-21T21:45:07.388Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/opt/adw/.claude/skills, project=[]
+2025-12-21T21:45:07.408Z [DEBUG] [SLOW OPERATION DETECTED] execSyncWithDefaults_DEPRECATED (16.0ms): ps aux | grep -E "code|cursor|windsurf|idea|pycharm|webstorm|phpstorm|rubymine|clion|goland|rider|da
+2025-12-21T21:45:07.409Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2025-12-21T21:45:07.418Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2025-12-21T21:45:07.418Z [DEBUG] Looking for shell config file: /opt/adw/.bashrc
+2025-12-21T21:45:07.418Z [DEBUG] Shell config file not found: /opt/adw/.bashrc, creating snapshot with Claude Code defaults only
+2025-12-21T21:45:07.418Z [DEBUG] Snapshots directory: /opt/adw/.claude/shell-snapshots
+2025-12-21T21:45:07.418Z [DEBUG] Creating snapshot at: /opt/adw/.claude/shell-snapshots/snapshot-bash-1766353507418-1z311u.sh
+2025-12-21T21:45:07.418Z [DEBUG] Shell binary exists: true
+2025-12-21T21:45:07.418Z [DEBUG] Execution timeout: 10000ms
+2025-12-21T21:45:07.420Z [DEBUG] Writing to temp file: /opt/adw/.claude/todos/0ee84d24-9cf3-42da-8d8b-a441becb15db-agent-0ee84d24-9cf3-42da-8d8b-a441becb15db.json.tmp.1256726.1766353507420
+2025-12-21T21:45:07.421Z [DEBUG] Temp file written successfully, size: 2 bytes
+2025-12-21T21:45:07.421Z [DEBUG] Renaming /opt/adw/.claude/todos/0ee84d24-9cf3-42da-8d8b-a441becb15db-agent-0ee84d24-9cf3-42da-8d8b-a441becb15db.json.tmp.1256726.1766353507420 to /opt/adw/.claude/todos/0ee84d24-9cf3-42da-8d8b-a441becb15db-agent-0ee84d24-9cf3-42da-8d8b-a441becb15db.json
+2025-12-21T21:45:07.422Z [DEBUG] File /opt/adw/.claude/todos/0ee84d24-9cf3-42da-8d8b-a441becb15db-agent-0ee84d24-9cf3-42da-8d8b-a441becb15db.json written atomically
+2025-12-21T21:45:07.423Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2025-12-21T21:45:07.423Z [DEBUG] Total plugin skills loaded: 0
+2025-12-21T21:45:07.423Z [DEBUG] Total plugin commands loaded: 0
+2025-12-21T21:45:07.423Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-21T21:45:07.428Z [DEBUG] Total plugin agents loaded: 0
+2025-12-21T21:45:07.439Z [DEBUG] Acquired mtime-based lock on running version: /opt/adw/.local/share/claude/versions/2.0.75
+2025-12-21T21:45:07.482Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256726.1766353507482
+2025-12-21T21:45:07.482Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:45:07.484Z [DEBUG] Temp file written successfully, size: 959 bytes
+2025-12-21T21:45:07.484Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:45:07.484Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256726.1766353507482 to /opt/adw/.claude.json
+2025-12-21T21:45:07.484Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:45:07.488Z [DEBUG] Loaded 21 unique skills (managed: 0, user: 0, project: 0, legacy commands: 21)
+2025-12-21T21:45:07.488Z [DEBUG] getSkills returning: 21 skill dir commands, 0 plugin skills
+2025-12-21T21:45:07.494Z [DEBUG] MCP server "playwright": Starting connection with timeout of 30000ms
+2025-12-21T21:45:07.513Z [DEBUG] MCP server "playwright": Connection failed after 22ms: Executable not found in $PATH: "npx"
+2025-12-21T21:45:07.513Z [ERROR] MCP server "playwright" Connection failed: Executable not found in $PATH: "npx"
+2025-12-21T21:45:07.515Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2025-12-21T21:45:07.520Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2025-12-21T21:45:07.520Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:45:07.520Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2025-12-21T21:45:07.526Z [DEBUG] Total plugin output styles loaded: 0
+2025-12-21T21:45:07.534Z [DEBUG] Remote settings: No settings found (404)
+2025-12-21T21:45:07.534Z [DEBUG] Programmatic settings change notification for policySettings
+2025-12-21T21:45:07.534Z [DEBUG] Plugin hooks: reloading due to policySettings change
+2025-12-21T21:45:07.535Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2025-12-21T21:45:07.538Z [DEBUG] Registered 0 hooks from 0 plugins
+2025-12-21T21:45:07.542Z [DEBUG] Git remote URL: https://github.com/tairea/tac-05
+2025-12-21T21:45:07.542Z [DEBUG] Parsed repository: tairea/tac-05 from https://github.com/tairea/tac-05
+2025-12-21T21:45:07.542Z [DEBUG] Parsed repository: tairea/tac-05 from URL: https://github.com/tairea/tac-05
+2025-12-21T21:45:07.543Z [DEBUG] Writing to temp file: /opt/adw/.claude.json.tmp.1256726.1766353507543
+2025-12-21T21:45:07.543Z [DEBUG] Preserving file permissions: 100600
+2025-12-21T21:45:07.544Z [DEBUG] Temp file written successfully, size: 977 bytes
+2025-12-21T21:45:07.544Z [DEBUG] Applied original permissions to temp file
+2025-12-21T21:45:07.544Z [DEBUG] Renaming /opt/adw/.claude.json.tmp.1256726.1766353507543 to /opt/adw/.claude.json
+2025-12-21T21:45:07.544Z [DEBUG] File /opt/adw/.claude.json written atomically
+2025-12-21T21:45:07.544Z [DEBUG] Added /opt/adw to tracked paths for repo tairea/tac-05
+2025-12-21T21:45:07.553Z [DEBUG] Shell snapshot created successfully (452 bytes)
+2025-12-21T21:45:07.575Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2025-12-21T21:45:07.575Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:45:07.575Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2025-12-21T21:45:07.576Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2025-12-21T21:45:07.576Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:45:07.576Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2025-12-21T21:45:07.581Z [DEBUG] Skills and commands included in Skill tool: find_plan_file, classify_issue, start, pull_request, install, test_e2e, test, feature, resolve_failed_test, resolve_failed_e2e_test, tools, prime, bug, implement, classify_adw, commit, generate_branch_name, chore, e2e:test_basic_query, e2e:test_complex_query, e2e:test_sql_injection
+2025-12-21T21:45:07.585Z [DEBUG] Metadata string for classify_adw:
+2025-12-21T21:45:07.585Z [DEBUG] "  <command-message>classify_adw</command-message>\n<command-name>/classify_adw</command-name>\n<command-args>adw_plan_build_test\n\n/feature\n\nCreate toggle button in the top right hand corner that can toggl"
+2025-12-21T21:45:07.585Z [DEBUG] command-message tags in metadata: 1
+2025-12-21T21:45:07.588Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2025-12-21T21:45:07.588Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2025-12-21T21:45:07.588Z [DEBUG] Hooks: Found 0 total hooks in registry
+2025-12-21T21:45:07.588Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2025-12-21T21:45:07.591Z [DEBUG] processPromptSlashCommand creating 3 messages for classify_adw
+2025-12-21T21:45:07.591Z [DEBUG] "  Message 1: <command-message>classify_adw</command-message>\n<command-name>/classify_adw</command-name>\n<command-args>adw_plan_build_test\n\n/feature\n\nCreate toggle button in the top right hand corner that can toggl"
+2025-12-21T21:45:07.591Z [DEBUG] Message 2 [META]: [{"type":"text","text":"# ADW Workflow Extraction\n\nExtract ADW workflow information from the text below and return a JSON response.\n\n## Instructions\n\n- Look for ADW workflow commands in the text
+2025-12-21T21:45:07.591Z [DEBUG] Message 3: [ATTACHMENT]
+2025-12-21T21:45:07.592Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2025-12-21T21:45:07.592Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:45:07.592Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2025-12-21T21:45:07.998Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:45:08.087Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:45:09.566Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2025-12-21T21:45:09.566Z [DEBUG] Found 1 hook matchers in settings
+2025-12-21T21:45:09.566Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-21T21:45:09.574Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-21T21:45:09.807Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:45:09.922Z [DEBUG] Stream started - received first chunk
+2025-12-21T21:45:10.898Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2025-12-21T21:45:10.898Z [DEBUG] Found 1 hook matchers in settings
+2025-12-21T21:45:10.898Z [DEBUG] Matched 1 unique hooks for query "no match query" (1 before deduplication)
+2025-12-21T21:45:10.906Z [DEBUG] Hook output does not start with {, treating as plain text
+2025-12-21T21:45:10.907Z [DEBUG] Getting matching hook commands for SessionEnd with query: other
+2025-12-21T21:45:10.907Z [DEBUG] Found 0 hook matchers in settings
+2025-12-21T21:45:10.907Z [DEBUG] Matched 0 unique hooks for query "other" (0 before deduplication)
